@@ -133,7 +133,11 @@ include 'constants.php';
                             </a></li>
 
                         <li><a href="pro/signin.php" class="page-scroll">
-                                <h3>Passenger Portal</h3>
+                                <h3>Customer Portal</h3>
+                            </a></li>
+
+                        <li><a href="pro/signin.php" class="page-scroll">
+                                <h3>Event Organizer</h3>
                             </a></li>
 
                         <li><a href="pro/adminsignin.php" class="page-scroll">
@@ -176,7 +180,7 @@ include 'constants.php';
                                     data-elements=" Reservation System, Reservation System, Reservation System"></span>
                             </h1>
 
-                            <p class="main-heading-text">WELCOME TO,<br />E - TICKETING FOR EGERTON ROUTES</p>
+                            <p class="main-heading-text">WELCOME TO,<br />E - TICKETING FOR EVENT BOOKINGS</p>
 
                             <div class="btn-bar">
 
@@ -205,16 +209,14 @@ include 'constants.php';
 
                         <div class="main-heading-content col-md-12 col-sm-12 text-center">
 
-                            <h1 class="main-heading-title">EGERTON ROUTES Co. Contact List</h1>
+                            <h1 class="main-heading-title">EGERTON EVENTS Co. Contact List</h1>
 
-                            <p class="main-heading-text">Get Bus Tickets from the comfort of your home.<br>
-Book Bus tickets from anywhere using the robust ticketing platform exclusively built to provide the passengers with pleasant ticketing experience.
+                            <p class="main-heading-text">Get your event Tickets from the comfort of your home.<br>
+Book event tickets from anywhere using the robust ticketing platform exclusively built to provide the passengers with pleasant ticketing experience.
                                 
                             </p>
 
                             <div class="btn-bar">
-
-
                                
                             </div>
 
@@ -271,10 +273,10 @@ Book Bus tickets from anywhere using the robust ticketing platform exclusively b
 
                             <i class="fa fa-newspaper-o"></i>
 
-                            <h4>Get Bus Tickets from the comfort of your home</h4>
+                            <h4>Get Event Tickets from the comfort of your home</h4>
 
-                            <p class="black">Book Bus tickets from anywhere using the robust ticketing platform
-                                exclusively built to provide the passengers with pleasant ticketing experience. </p>
+                            <p class="black">Book Event tickets from anywhere using the robust ticketing platform
+                                exclusively built to provide the customers with pleasant ticketing experience. </p>
 
                         </div> <!-- / margin -->
 
@@ -286,10 +288,10 @@ Book Bus tickets from anywhere using the robust ticketing platform exclusively b
 
                             <i class="fa fa-diamond"></i>
 
-                            <h4>Bus & Ticketing related information at your fingertips</h4>
+                            <h4>Event Ticketing related information at your fingertips</h4>
 
-                            <p class="black">Checkout available seats, route information, fare information on real time
-                                basis with Esheba Platform.</p>
+                            <p class="black">Checkout available seats, venue information, cost information on real time
+                                basis with Egerton e-ticketing.</p>
 
                         </div> <!-- / margin -->
 
