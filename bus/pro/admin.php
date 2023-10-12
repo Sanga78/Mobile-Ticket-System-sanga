@@ -122,7 +122,7 @@ $fullname =  "System Administrator";
                                                                                 ?>">
                                 <i class="nav-icon fas fa-route"></i>
                                 <p>
-                                    Routes
+                                    Organizers
                                 </p>
                             </a>
                         </li>
@@ -133,7 +133,7 @@ $fullname =  "System Administrator";
                                                                                 ?>">
                                 <i class="nav-icon fas fa-bus"></i>
                                 <p>
-                                    Buses 
+                                    Events 
                                 </p>
                             </a>
                         </li>
