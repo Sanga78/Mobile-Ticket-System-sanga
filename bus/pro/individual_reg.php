@@ -74,7 +74,7 @@ alert("We could not register you!.");
         <h2>Create Account </h2>
         <br>
         <p class="alert alert-info">
-            <marquee behavior="" scrollamount="2" direction="">You need to create an account to book/view trains!
+            <marquee behavior="" scrollamount="2" direction="">You need to create an account to book/view Event!
             </marquee>
         </p>
         <form class="login-form" method="post" role="form" enctype="multipart/form-data" id="signup-form"
@@ -92,7 +92,7 @@ alert("We could not register you!.");
             <div class="col-md-6">
                 <div class="form-group">
                     <label>Contact Number</label>
-                    <input type="text" minlength="11" pattern="[0-9]{11}" required name="phone">
+                    <input type="text" minlength="11" pattern="[0-9]{10}" required name="phone">
                 </div>
             </div>
             <div class="col-md-6">
@@ -144,7 +144,7 @@ alert("We could not register you!.");
     </div>
 </div>
 </div>
-<script src="assets/js/jquery-1.12.4-jquery.min.js"></script>
+<!-- <script src="assets/js/jquery-1.12.4-jquery.min.js"></script> -->
 
 </body>
 
