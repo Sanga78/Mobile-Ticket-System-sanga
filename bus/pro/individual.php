@@ -118,15 +118,14 @@ if (isset($_GET['error'])) {
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="individual.php?page=route" class="nav-link      <?php
-                                                                                echo (@$_GET['page'] == 'route') ? 'active' : '';
+                            <a href="individual.php?page=bus" class="nav-link      <?php
+                                                                                echo (@$_GET['page'] == 'bus') ? 'active' : '';
                                                                                 ?>">
-                                <i class="nav-icon fas fa-route"></i>
+                                <i class="nav-icon fas fa-bus"></i>
                                 <p>
-                                    RouteS
+                                    Event
                                 </p>
                             </a>
-                        </li>
                         </li>
                         <li class="nav-item">
                             <a href="individual.php?page=bus" class="nav-link      <?php
@@ -134,11 +133,21 @@ if (isset($_GET['error'])) {
                                                                                 ?>">
                                 <i class="nav-icon fas fa-bus"></i>
                                 <p>
-                                    Buses 
+                                    Organizer
                                 </p>
                             </a>
                         </li>
-						
+                        <li class="nav-item">
+                            <a href="individual.php?page=route" class="nav-link      <?php
+                                                                                echo (@$_GET['page'] == 'route') ? 'active' : '';
+                                                                                ?>">
+                                <i class="nav-icon fas fa-route"></i>
+                                <p>
+                                    Time
+                                </p>
+                            </a>
+                        </li>
+                        </li>				
 
                       
                         <li class="nav-item">
