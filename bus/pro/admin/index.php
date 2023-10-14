@@ -9,7 +9,7 @@ if (!isset($file_access)) die("Direct File Access Denied");
                 <span class="info-box-icon"><i class="fa fa-users"></i></span>
 
                 <div class="info-box-content">
-                    <span class="info-box-text">Passengers</span>
+                    <span class="info-box-text">Attendees</span>
                     <span class="info-box-number"><?php
                                                     echo $reg =  $conn->query("SELECT * FROM passenger")->num_rows;
                                                     ?></span>
@@ -30,7 +30,7 @@ if (!isset($file_access)) die("Direct File Access Denied");
                 <span class="info-box-icon"><i class="fa fa-bus"></i></span>
 
                 <div class="info-box-content">
-                    <span class="info-box-text">Buses</span>
+                    <span class="info-box-text">Events</span>
                     <span class="info-box-number"><?php
                                                     echo $comp = $conn->query("SELECT * FROM bus")->num_rows;
                                                     ?></span>
