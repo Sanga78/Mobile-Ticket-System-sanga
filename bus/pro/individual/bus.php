@@ -13,7 +13,7 @@ $me = "?page=$source";
                     <div class="card card-success">
                         <div class="card-header">
                             <h3 class="card-title">
-                                All Buses</h3>
+                                All Events</h3>
                             <div class='float-right'>
                                 </div>
                         </div>
@@ -26,7 +26,7 @@ $me = "?page=$source";
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Bus Name</th>
+                                        <th>Event</th>
                                         <th>First Class Seat</th>
                                         <th>Second Class Seat</th>
                                         
@@ -68,7 +68,7 @@ $me = "?page=$source";
                                                     <form action="" method="post">
                                                         <input type="hidden" class="form-control" name="id"
                                                             value="<?php echo $id ?>" required id="">
-                                                        <p>	Bus Name : <input type="strings" class="form-control"
+                                                        <p>	Event : <input type="strings" class="form-control"
                                                                 name="name" value="<?php echo $fetch['name'] ?>"
                                                                 required minlength="3" id=""></p>
                                                         <p>First Class Capacity : <input type="number" min='0'
