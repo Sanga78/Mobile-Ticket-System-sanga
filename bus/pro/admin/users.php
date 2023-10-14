@@ -113,8 +113,8 @@ if (isset($_GET['status'], $_GET['id'])) {
                 <form action="" method="post">
                     <div class="row">
                         <div class="col-sm-6">
-                           Bus: <select class="form-control" name="train_id" required id="">
-                                <option value="">Select Bus</option>
+                           Event: <select class="form-control" name="train_id" required id="">
+                                <option value="">Select Event</option>
                                 <?php
                                 $con = connect()->query("SELECT * FROM train");
                                 while ($row = $con->fetch_assoc()) {
@@ -125,8 +125,8 @@ if (isset($_GET['status'], $_GET['id'])) {
 
                         </div>
                         <div class="col-sm-6">
-                            Route : <select class="form-control" name="route_id" required id="">
-                                <option value="">Select Route</option>
+                            Organizer : <select class="form-control" name="route_id" required id="">
+                                <option value="">Select Organizer</option>
                                 <?php
                                 $con = connect()->query("SELECT * FROM route");
                                 while ($row = $con->fetch_assoc()) {
@@ -198,8 +198,8 @@ if (isset($_GET['status'], $_GET['id'])) {
                 <form action="" method="post">
                     <div class="row">
                         <div class="col-sm-6">
-                            Bus: <select class="form-control" name="train_id" required id="">
-                                <option value="">Select Bus</option>
+                            Event: <select class="form-control" name="train_id" required id="">
+                                <option value="">Select event</option>
                                 <?php
                                 $con = connect()->query("SELECT * FROM train");
                                 while ($row = $con->fetch_assoc()) {
@@ -210,8 +210,8 @@ if (isset($_GET['status'], $_GET['id'])) {
 
                         </div>
                         <div class="col-sm-6">
-                            Route : <select class="form-control" name="route_id" required id="">
-                                <option value="">Select Route</option>
+                            Organizer : <select class="form-control" name="route_id" required id="">
+                                <option value="">Select organizer</option>
                                 <?php
                                 $con = connect()->query("SELECT * FROM route");
                                 while ($row = $con->fetch_assoc()) {
