@@ -13,7 +13,7 @@ $me = "?page=$source"
                     <div class="card card-success">
                         <div class="card-header">
                             <h3 class="card-title">
-                                All Routes</h3>
+                                All Organizers</h3>
                             <div class='float-right'>
                                
                         </div>
@@ -25,7 +25,7 @@ $me = "?page=$source"
                                                                                                                                             ?>">
                                 <thead>
                                     <tr>
-                                        <th>#</th>
+                                        <th>Time</th>
                                         <th>From</th>
                                         <th>To</th>
                                         
