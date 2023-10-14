@@ -13,11 +13,11 @@ $me = "?page=$source"
                     <div class="card card-success">
                         <div class="card-header">
                             <h3 class="card-title">
-                                All Routes</h3>
+                                All Organizers</h3>
                             <div class='float-right'>
                                 <button type="button" class="btn btn-info btn-sm" data-toggle="modal"
                                     data-target="#add">
-                                    Add New Route &#128645;
+                                    Add New Organizer &#128645;
                                 </button></div>
                         </div>
 
@@ -131,7 +131,7 @@ $me = "?page=$source"
     <div class="modal-dialog modal-lg">
         <div class="modal-content" align="center">
             <div class="modal-header">
-                <h4 class="modal-title">Add New Route &#128649;
+                <h4 class="modal-title">Add New Organizer &#128649;
                 </h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
