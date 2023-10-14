@@ -25,8 +25,8 @@ $me = "?page=$source";
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Bus</th>
-                                        <th>Route</th>
+                                        <th>Events</th>
+                                        <th>Organizer</th>
                                         <th>F.C Fee</th>
                                         <th>S.C Fee</th>
                                         <th>Total Bookings</th>
@@ -78,7 +78,7 @@ $me = "?page=$source";
                                                         <input type="hidden" class="form-control" name="id"
                                                             value="<?php echo $id ?>" required id="">
 
-                                                        <p>Bus : <select class="form-control" name="bus_id" required
+                                                        <p>Event : <select class="form-control" name="bus_id" required
                                                                 id="">
                                                                 <option value="">Select BUS</option>
                                                                 <?php
@@ -90,9 +90,9 @@ $me = "?page=$source";
                                                             </select>
                                                         </p>
 
-                                                        <p>Route : <select class="form-control" name="route_id" required
+                                                        <p>Organizer : <select class="form-control" name="route_id" required
                                                                 id="">
-                                                                <option value="">Select Route</option>
+                                                                <option value="">Select Organizer</option>
                                                                 <?php
                                                                     $cond = connect()->query("SELECT * FROM route");
                                                                     while ($r = $cond->fetch_assoc()) {
