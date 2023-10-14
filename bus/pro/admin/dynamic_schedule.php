@@ -33,8 +33,8 @@ $me = "?page=$source";
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Bus</th>
-                                        <th>Route</th>
+                                        <th>Event</th>
+                                        <th>Organizer</th>
                                         <th>F.C Fee</th>
                                         <th>S.C Fee</th>
                                         <th>Total Bookings</th>
@@ -99,7 +99,7 @@ $me = "?page=$source";
                                                         <input type="hidden" class="form-control" name="id"
                                                             value="<?php echo $id ?>" required id="">
 
-                                                        <p>Bus : <select class="form-control" name="bus_id" required
+                                                        <p>Event : <select class="form-control" name="bus_id" required
                                                                 id="">
                                                                 <option value="">Select BUS</option>
                                                                 <?php
@@ -111,7 +111,7 @@ $me = "?page=$source";
                                                             </select>
                                                         </p>
 
-                                                        <p>Route : <select class="form-control" name="route_id" required
+                                                        <p>Organizer : <select class="form-control" name="route_id" required
                                                                 id="">
                                                                 <option value="">Select Route</option>
                                                                 <?php
@@ -193,8 +193,8 @@ $me = "?page=$source";
                 <form action="" method="post">
                     <div class="row">
                         <div class="col-sm-6">
-                            Bus : <select class="form-control" name="bus_id" required id="">
-                                <option value="">Select Bus</option>
+                            Event : <select class="form-control" name="bus_id" required id="">
+                                <option value="">Select Event</option>
                                 <?php
                                 $con = connect()->query("SELECT * FROM bus");
                                 while ($row = $con->fetch_assoc()) {
@@ -205,8 +205,8 @@ $me = "?page=$source";
 
                         </div>
                         <div class="col-sm-6">
-                            Route : <select class="form-control" name="route_id" required id="">
-                                <option value="">Select Route</option>
+                            Organizer : <select class="form-control" name="route_id" required id="">
+                                <option value="">Select Organizer</option>
                                 <?php
                                 $con = connect()->query("SELECT * FROM route");
                                 while ($row = $con->fetch_assoc()) {
@@ -278,7 +278,7 @@ $me = "?page=$source";
                 <form action="" method="post">
                     <div class="row">
                         <div class="col-sm-6">
-                            Bus : <select class="form-control" name="bus_id" required id="">
+                            Event : <select class="form-control" name="bus_id" required id="">
                                 <option value="">Select Bus</option>
                                 <?php
                                 $con = connect()->query("SELECT * FROM bus");
@@ -290,7 +290,7 @@ $me = "?page=$source";
 
                         </div>
                         <div class="col-sm-6">
-                            Route : <select class="form-control" name="route_id" required id="">
+                            Organizer : <select class="form-control" name="route_id" required id="">
                                 <option value="">Select Route</option>
                                 <?php
                                 $con = connect()->query("SELECT * FROM route");
