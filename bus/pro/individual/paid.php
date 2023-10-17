@@ -78,7 +78,7 @@ if (isset($_GET['now'])) {
                                                     <?php echo $row['seat'];
                                                         ?>
                                                 </p>
-                                                <p><b>Train Name :</b>
+                                                <p><b>Event Name :</b>
                                                     <?php echo getTrainName($row['train_id']);
                                                         ?>
                                                 </p>
