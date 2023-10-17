@@ -130,12 +130,12 @@ if (isset($_POST['submit'])) {
         //Check if bus exists
         $check = $conn->query("SELECT * FROM bus WHERE name = '$name' ")->num_rows;
         if ($check) {
-            alert("Bus exists");
+            alert("Event exists");
         } else {
             $ins = $conn->prepare("INSERT INTO bus (name, first_seat, second_seat) VALUES (?,?,?)");
             $ins->bind_param("sss", $name, $first_seat, $second_seat);
             $ins->execute();
-            alert("Bus Added!");
+            alert("Event Added!");
             load($_SERVER['PHP_SELF'] . "$me");
         }
     }
@@ -153,12 +153,12 @@ if (isset($_POST['edit'])) {
         //Check if bus exists
         $check = $conn->query("SELECT * FROM bus WHERE name = '$name' ")->num_rows;
         if ($check == 2) {
-            alert("Bus name exists");
+            alert("Event exists");
         } else {
             $ins = $conn->prepare("UPDATE bus SET name = ?, first_seat = ?, second_seat = ? WHERE id = ?");
             $ins->bind_param("sssi", $name, $first_seat, $second_seat, $id);
             $ins->execute();
-            alert("Bus Modified!");
+            alert("Event Modified!");
             load($_SERVER['PHP_SELF'] . "$me");
         }
     }
@@ -168,10 +168,10 @@ if (isset($_POST['del_bus'])) {
     $con = connect();
     $conn = $con->query("DELETE FROM bus WHERE id = '" . $_POST['del_bus'] . "'");
     if ($con->affected_rows < 1) {
-        alert("Bus Could Not Be Deleted. This Bus Been Tied To Another Data!");
+        alert("Event Could Not Be Deleted. This Event Been Tied To Another Data!");
         load($_SERVER['PHP_SELF'] . "$me");
     } else {
-        alert("Bus Deleted!");
+        alert("Event Deleted!");
         load($_SERVER['PHP_SELF'] . "$me");
     }
 }
