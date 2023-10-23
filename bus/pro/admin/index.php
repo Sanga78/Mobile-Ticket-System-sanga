@@ -99,7 +99,7 @@ if (!isset($file_access)) die("Direct File Access Denied");
                 <span class="info-box-icon"><i class="fa fa-route"></i></span>
 
                 <div class="info-box-content">
-                    <span class="info-box-text">Routes</span>
+                    <span class="info-box-text">Organizers</span>
                     <span class="info-box-number"><?php echo connect()->query("SELECT * FROM route")->num_rows ?></span>
 
                     <div class="progress">
