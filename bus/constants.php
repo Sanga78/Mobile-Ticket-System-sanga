@@ -334,6 +334,14 @@ function login($username, $password)
     return 0;
 }
 
+function organizerlogin($username, $password)
+{
+    $password = md5($password);
+    $q = connect()->query("SELECT * FROM organizer WHERE email = '$username' AND password = '$password' AND status = '1' ")->num_rows;
+    if ($q == 1) return 1;
+    return 0;
+}
+
 function adminLogin($username, $password)
 {
     $q = connect()->query("SELECT * FROM users WHERE username = '$username' AND password = '$password' ")->num_rows;
@@ -347,6 +355,15 @@ function getIndividualName($id, $conn = null)
     $q = $conn->query("SELECT * FROM passenger WHERE id = '$id'")->fetch_assoc();
     return $q['name'];
 }
+
+
+function getOrganizerName($id, $conn = null)
+{
+    $conn = connect();
+    $q = $conn->query("SELECT * FROM organizer WHERE id = '$id'")->fetch_assoc();
+    return $q['name'];
+}
+
 
 function uploadFile($file)
 {
