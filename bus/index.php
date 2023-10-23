@@ -128,15 +128,11 @@ include 'constants.php';
                                 <h3>About</h3>
                             </a></li>
 
-                        <li><a href="library/sample.pdf" class="page-scroll">
-                                <h3>Map</h3>
-                            </a></li>
-
                         <li><a href="pro/signin.php" class="page-scroll">
                                 <h3>Customer Portal</h3>
                             </a></li>
 
-                        <li><a href="pro/signin.php" class="page-scroll">
+                        <li><a href="pro/organizer_signin.php" class="page-scroll">
                                 <h3>Event Organizer</h3>
                             </a></li>
 
