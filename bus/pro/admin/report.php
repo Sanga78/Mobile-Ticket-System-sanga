@@ -350,7 +350,7 @@ if (isset($_POST['del_train'])) {
     $con = connect();
     $conn = $con->query("DELETE FROM schedule WHERE id = '" . $_POST['del_train'] . "'");
     if ($con->affected_rows < 1) {
-        alert("Schedule Could Not Be Deleted. This Route Has Been Tied To Another Data!");
+        alert("Schedule Could Not Be Deleted. This event Has Been Tied To Another Data!");
         load($_SERVER['PHP_SELF'] . "$me");
     } else {
         alert("Schedule Deleted!");
